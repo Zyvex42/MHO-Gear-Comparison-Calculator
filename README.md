@@ -6,7 +6,7 @@ Elevated privileges (admin) may be required to read the game's memory, depending
 
 Some virus scanners may report AutoIt compiled programs as malicious.  A virus scan result can be found here:
 
-https://www.virustotal.com/gui/file/56837351c00b5202a3e02472fb6c1bc581edcb075bd229cc62f893ade4b7efa3
+https://www.virustotal.com/gui/file/efd8f55dd3b89b661b79c30c9beaa5f532b35c96865b7cbe0bc93bfb53ed50b3
 
 
 # How to use this program:
