@@ -37,4 +37,6 @@ The number displayed to the right of Offense in the New column is a comparison o
 
 Programming to account for every hero and every situation would be a mountain of a task.  Some powers don't benefit from attack speed, and some do.  Some heroes benefit from increases to max spirit.  Some benefit from max health, but only on certain powers.  Those changes are not accounted for.  
 
+Reading mouse-over tooltips to determine if an item is an upgrade before equipping is another thing this program doesn't do at this time.  I will look into it, but there is a strong chance that won't work due to hidden stats on some items.
+
 For most situations, however, this program can give you a very good idea of how much DPS and survivability is changed by glancing at the Offense change and mitigation/EHP change.
