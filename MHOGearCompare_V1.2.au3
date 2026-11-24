@@ -840,10 +840,10 @@ Func _UpdateUI()
 	GUICtrlSetData($Input_newdam, Round((($new_fd - $old_fd) / $old_fd) * 100, 2) & "%")
 	
 	; update comparisons
-	If $aStatsOld[$STAT_HP_MAX] > $aStatsNew[$STAT_HP_MAX] Then
+	If Round($aStatsOld[$STAT_HP_MAX], 4) > Round($aStatsNew[$STAT_HP_MAX], 4) Then
 		GUICtrlSetData($Label_chealth, ChrW(0x25BC))
 		GUICtrlSetColor($Label_chealth, 0xFF0000)
-	ElseIf $aStatsOld[$STAT_HP_MAX] < $aStatsNew[$STAT_HP_MAX] Then
+	ElseIf Round($aStatsOld[$STAT_HP_MAX], 4) < Round($aStatsNew[$STAT_HP_MAX], 4) Then
 		GUICtrlSetData($Label_chealth, ChrW(0x25B2))
 		GUICtrlSetColor($Label_chealth, 0x00FF00)
 	Else
@@ -851,10 +851,10 @@ Func _UpdateUI()
 		GUICtrlSetColor($Label_chealth, 0x00000)
 	EndIf
 	
-	If $old_def > $new_def Then
+	If Round($old_def, 4) > Round($new_def, 4) Then
 		GUICtrlSetData($Label_cdef, ChrW(0x25BC))
 		GUICtrlSetColor($Label_cdef, 0xFF0000)
-	ElseIf $old_def < $new_def Then
+	ElseIf Round($old_def, 4) < Round($new_def, 4) Then
 		GUICtrlSetData($Label_cdef, ChrW(0x25B2))
 		GUICtrlSetColor($Label_cdef, 0x00FF00)
 	Else
@@ -862,10 +862,10 @@ Func _UpdateUI()
 		GUICtrlSetColor($Label_cdef, 0x00000)
 	EndIf
 	
-	If $old_blk > $new_blk Then
+	If Round($old_blk, 4) > Round($new_blk, 4) Then
 		GUICtrlSetData($Label_cdefl, ChrW(0x25BC))
 		GUICtrlSetColor($Label_cdefl, 0xFF0000)
-	ElseIf $old_blk < $new_blk Then
+	ElseIf Round($old_blk, 4) < Round($new_blk, 4) Then
 		GUICtrlSetData($Label_cdefl, ChrW(0x25B2))
 		GUICtrlSetColor($Label_cdefl, 0x00FF00)
 	Else
@@ -873,10 +873,10 @@ Func _UpdateUI()
 		GUICtrlSetColor($Label_cdefl, 0x00000)
 	EndIf
 	
-	If $old_dod > $new_dod Then
+	If Round($old_dod, 4) > Round($new_dod, 4) Then
 		GUICtrlSetData($Label_cdod, ChrW(0x25BC))
 		GUICtrlSetColor($Label_cdod, 0xFF0000)
-	ElseIf $old_dod < $new_dod Then
+	ElseIf Round($old_dod, 4) < Round($new_dod, 4) Then
 		GUICtrlSetData($Label_cdod, ChrW(0x25B2))
 		GUICtrlSetColor($Label_cdod, 0x00FF00)
 	Else
@@ -884,10 +884,10 @@ Func _UpdateUI()
 		GUICtrlSetColor($Label_cdod, 0x00000)
 	EndIf
 	
-	If $old_dr > $new_dr Then
+	If Round($old_dr, 4) > Round($new_dr, 4) Then
 		GUICtrlSetData($Label_cdr, ChrW(0x25BC))
 		GUICtrlSetColor($Label_cdr, 0xFF0000)
-	ElseIf $old_dr < $new_dr Then
+	ElseIf Round($old_dr, 4) < Round($new_dr, 4) Then
 		GUICtrlSetData($Label_cdr, ChrW(0x25B2))
 		GUICtrlSetColor($Label_cdr, 0x00FF00)
 	Else
@@ -895,10 +895,10 @@ Func _UpdateUI()
 		GUICtrlSetColor($Label_cdr, 0x00000)
 	EndIf
 	
-	If $old_ehp > $new_ehp Then
+	If Round($old_ehp, 4) > Round($new_ehp, 4) Then
 		GUICtrlSetData($Label_cehp, ChrW(0x25BC))
 		GUICtrlSetColor($Label_cehp, 0xFF0000)
-	ElseIf $old_ehp < $new_ehp Then
+	ElseIf Round($old_ehp, 4) < Round($new_ehp, 4) Then
 		GUICtrlSetData($Label_cehp, ChrW(0x25B2))
 		GUICtrlSetColor($Label_cehp, 0x00FF00)
 	Else
@@ -906,10 +906,10 @@ Func _UpdateUI()
 		GUICtrlSetColor($Label_cehp, 0x00000)
 	EndIf
 	
-	If $old_base > $new_base Then
+	If Round($old_base, 4) > Round($new_base, 4) Then
 		GUICtrlSetData($Label_cbd, ChrW(0x25BC))
 		GUICtrlSetColor($Label_cbd, 0xFF0000)
-	ElseIf $old_base < $new_base Then
+	ElseIf Round($old_base, 4) < Round($new_base, 4) Then
 		GUICtrlSetData($Label_cbd, ChrW(0x25B2))
 		GUICtrlSetColor($Label_cbd, 0x00FF00)
 	Else
@@ -917,10 +917,10 @@ Func _UpdateUI()
 		GUICtrlSetColor($Label_cbd, 0x00000)
 	EndIf
 	
-	If $old_as > $new_as Then
+	If Round($old_as, 4) > Round($new_as, 4) Then
 		GUICtrlSetData($Label_cas, ChrW(0x25BC))
 		GUICtrlSetColor($Label_cas, 0xFF0000)
-	ElseIf $old_as < $new_as Then
+	ElseIf Round($old_as, 4) < Round($new_as, 4) Then
 		GUICtrlSetData($Label_cas, ChrW(0x25B2))
 		GUICtrlSetColor($Label_cas, 0x00FF00)
 	Else
@@ -928,10 +928,10 @@ Func _UpdateUI()
 		GUICtrlSetColor($Label_cas, 0x00000)
 	EndIf
 	
-	If $old_cc_real > $new_cc_real Then
+	If Round($old_cc_real, 4) > Round($new_cc_real, 4) Then
 		GUICtrlSetData($Label_ccc, ChrW(0x25BC))
 		GUICtrlSetColor($Label_ccc, 0xFF0000)
-	ElseIf $old_cc_real < $new_cc_real Then
+	ElseIf Round($old_cc_real, 4) < Round($new_cc_real, 4) Then
 		GUICtrlSetData($Label_ccc, ChrW(0x25B2))
 		GUICtrlSetColor($Label_ccc, 0x00FF00)
 	Else
@@ -939,10 +939,10 @@ Func _UpdateUI()
 		GUICtrlSetColor($Label_ccc, 0x00000)
 	EndIf
 	
-	If $old_cd > $new_cd Then
+	If Round($old_cd, 4) > Round($new_cd, 4) Then
 		GUICtrlSetData($Label_ccd, ChrW(0x25BC))
 		GUICtrlSetColor($Label_ccd, 0xFF0000)
-	ElseIf $old_cd < $new_cd Then
+	ElseIf Round($old_cd, 4) < Round($new_cd, 4) Then
 		GUICtrlSetData($Label_ccd, ChrW(0x25B2))
 		GUICtrlSetColor($Label_ccd, 0x00FF00)
 	Else
@@ -950,10 +950,10 @@ Func _UpdateUI()
 		GUICtrlSetColor($Label_ccd, 0x00000)
 	EndIf
 	
-	If $old_sc_real > $new_sc_real Then
+	If Round($old_sc_real, 4) > Round($new_sc_real, 4) Then
 		GUICtrlSetData($Label_csc, ChrW(0x25BC))
 		GUICtrlSetColor($Label_csc, 0xFF0000)
-	ElseIf $old_sc_real < $new_sc_real Then
+	ElseIf Round($old_sc_real, 4) < Round($new_sc_real, 4) Then
 		GUICtrlSetData($Label_csc, ChrW(0x25B2))
 		GUICtrlSetColor($Label_csc, 0x00FF00)
 	Else
@@ -961,10 +961,10 @@ Func _UpdateUI()
 		GUICtrlSetColor($Label_csc, 0x00000)
 	EndIf
 	
-	If $old_sd > $new_sd Then
+	If Round($old_sd, 4) > Round($new_sd, 4) Then
 		GUICtrlSetData($Label_csd, ChrW(0x25BC))
 		GUICtrlSetColor($Label_csd, 0xFF0000)
-	ElseIf $old_sd < $new_sd Then
+	ElseIf Round($old_sd, 4) < Round($new_sd, 4) Then
 		GUICtrlSetData($Label_csd, ChrW(0x25B2))
 		GUICtrlSetColor($Label_csd, 0x00FF00)
 	Else
@@ -972,10 +972,10 @@ Func _UpdateUI()
 		GUICtrlSetColor($Label_csd, 0x00000)
 	EndIf
 	
-	If $old_fd > $new_fd Then
+	If Round($old_fd, 4) > Round($new_fd, 4) Then
 		GUICtrlSetData($Label_cnewdam, ChrW(0x25BC))
 		GUICtrlSetColor($Label_cnewdam, 0xFF0000)
-	ElseIf $old_fd < $new_fd Then
+	ElseIf Round($old_fd, 4) < Round($new_fd, 4) Then
 		GUICtrlSetData($Label_cnewdam, ChrW(0x25B2))
 		GUICtrlSetColor($Label_cnewdam, 0x00FF00)
 	Else
