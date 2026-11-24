@@ -17,6 +17,8 @@ Run it alongside the game.  It does not matter which is launched first.
 
 The - and + buttons in the top-left resize the application.
 
+Pressing Ctrl + Shift + Z will hide the program.  Press again to show.  The system tray shows the program even if it is hidden.
+
 The program will detect any changes to your hero's stats in real-time.  If you want to compare gear, it is strongly recommended to stay in a controlled area (like the training room) to avoid player auras from causing a stat update.  Some heroes and items have buffs that apply themselves when moving or after stopping, so keep that in mind.
 
 Checking the "Lock Old" box will read your stats immediately so you can compare against a baseline.  Checking the other boxes will not cause the program to read your stats, but it will change the calculations to match OFFENSE only for powers tagged with those boxes, and brutal immune for CoA server.
